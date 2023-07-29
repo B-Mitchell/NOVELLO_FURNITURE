@@ -199,6 +199,7 @@ nav {
     }
     .services_works_one {
         display: block;
+        margin: auto;
     }
     .services_works_one_cards {
         margin: auto;
