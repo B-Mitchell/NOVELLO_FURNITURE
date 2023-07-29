@@ -1,0 +1,223 @@
+:root {
+    --highlight-color: rgb(175, 180, 184);
+    --highlight-color-two: #f7f8f4;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+/* NAVBAR */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    background-color: var(--highlight-color-two);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--highlight-color);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    border-bottom: .1rem solid #fff;
+}
+.nav_list {
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+.svg_nav {
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+    display: none;
+}
+.nav_list_item {
+    margin-right: 2rem;
+    list-style: none;
+    font-size: larger;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+.nav_list_item:hover {
+    font-size: 1.3rem;
+}
+.nav_list_item > a {
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.logo {
+    height: 6rem;
+    width: 7rem;
+}
+
+/* HERO COMPONENT */
+.hero_component {
+    height: 29.5rem;
+    background-image: url(/image_need/hero_comp.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12rem;
+}
+.hero_component_sm {
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+    color: white;
+}
+.mainText {
+    color: white;
+    font-weight: 600;
+    font-size: 7rem;
+    text-align: center;
+    margin: auto;
+}
+/* SERVICES COMPONENT */
+.services_main {
+    padding-top: 1rem;
+}
+.services_text {
+    text-align: center;
+}
+.services_text_main {
+    padding-top: .5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.services_text_sub {
+    padding-top: .5rem;
+    font-size: large;
+    width: 70%;
+    margin: auto;
+}
+.services_works_one {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.services_works_one_cards {
+    margin: .2rem;
+}
+.services_works_one_cards_mainT {
+    padding-top: .5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+.services_works_one_cards > img {
+    width: 90%;
+    height: 16rem;
+    border-radius: 2rem;
+}
+.services_works_one_cards_mainS {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: .2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: var(--highlight-color);
+    }
+    .svg_nav {
+        display: block;
+        cursor: pointer;
+    }
+    .nav_list {
+        display: none;
+    }
+    .nav_list_item {
+        margin-top: 2rem;
+        width: 40%;
+        text-transform: uppercase;
+    }
+    .nav_list_item:first-child {
+        border: 1px solid white;
+        scale: 120%;
+    }
+    .nav_list_item:hover {
+        border: 1px solid white;
+        scale: 120%;
+    }
+    .nav_list_item:last-child {
+        margin-bottom: 2rem;
+    }
+    .active {
+        display: block;
+        position: absolute;
+        margin-top: 6rem;
+        text-align: center;
+        width: 100%;
+        transition: .8s ease-in-out;
+        background-color: var(--highlight-color);
+    }
+    /* HERO COMPONENT */
+    .hero_component {
+        height: 28rem;
+        background-image: url(/image_need/hero_comp.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 12rem;
+    }
+    .mainText {
+        color: white;
+        font-weight: 600;
+        font-size: 4rem;
+        text-align: center;
+        margin: auto;
+    }
+    /* SERVICES COMPONENT */
+    .services_main {
+        padding-top: .3rem;
+    }
+    .services_text {
+        text-align: center;
+        border-radius: 20rem;
+        border-bottom: 1rem solid var(--highlight-color);
+    }
+    .services_text_main {
+        padding-top: .5rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .services_text_sub {
+        padding-top: .5rem;
+        font-size: 1rem;
+        width: 70%;
+        margin: auto;
+    }
+    .services_works_one {
+        display: block;
+    }
+    .services_works_one_cards {
+        margin: auto;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .services_works_one_cards > img {
+        height: 18rem;
+        width: 70%;
+        border-radius: 2rem;
+    }
+    .services_works_one_cards_mainT {
+        padding-top: .5rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .services_works_one_cards_mainS {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2rem;
+        margin-top: .2rem;
+    }
+
+
+}
