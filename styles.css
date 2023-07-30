@@ -17,6 +17,7 @@ body {
 /* font-family: 'Poppins', sans-serif; */
     position: relative;
     background-color: var(--highlight-color-two);
+    scroll-behavior: smooth;
 }
 nav {
     display: flex;
@@ -87,6 +88,8 @@ nav {
 }
 .services_text {
     text-align: center;
+    border-radius: 20rem;
+    border-bottom: 1rem solid var(--highlight-color);
 }
 .services_text_main {
     padding-top: .5rem;
@@ -101,7 +104,7 @@ nav {
 }
 .services_works_one {
     display: flex;
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-top: 2rem;
 }
@@ -124,6 +127,25 @@ nav {
     text-align: center;
     margin-bottom: 2rem;
     margin-top: .2rem;
+}
+/*  */
+.products_bed_main {
+    background-color: var(--highlight-color);
+    padding-bottom: 1rem;
+}
+.products_text {
+    text-align: center;
+    border-radius: 20rem;
+    border-bottom: 1rem solid var(--highlight-color-two);
+}
+.products_furniture_main {
+    background-color: var(--highlight-color-two);
+}
+.products_text_furniture {
+    text-align: center;
+    padding-bottom: 1rem;
+    border-radius: 20rem;
+    border-bottom: 1rem solid var(--highlight-color);
 }
 
 @media only screen and (max-width: 600px) {
@@ -184,6 +206,7 @@ nav {
     .services_text {
         text-align: center;
         border-radius: 20rem;
+        padding-bottom: 1rem;
         border-bottom: 1rem solid var(--highlight-color);
     }
     .services_text_main {
@@ -221,6 +244,39 @@ nav {
         margin: auto;
         margin-bottom: 2rem;
         margin-top: .2rem;
+    }
+    .products_bed_main {
+        background-color: var(--highlight-color);
+    }
+    .products_text {
+        text-align: center;
+        border-radius: 20rem;
+        padding-bottom: 1rem;
+        border-bottom: 1rem solid var(--highlight-color-two);
+    }
+
+    /* FOOTER */
+    .footer {
+        background-color: var(--highlight-color);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }.footer_top > div > p {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+        font-weight: 600;
+    }
+    .footer_top {
+        background-color: var(--highlight-color-two);
+        width: 80%;
+        padding-left: .4rem;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .footer_bottom {
+        background-color: var(--highlight-color-two);
+        width: 80%;
+        padding-left: .4rem;
+        margin: auto;
     }
 
 
