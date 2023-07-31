@@ -278,6 +278,12 @@ nav {
         padding-left: .4rem;
         margin: auto;
     }
+    .footer_links {
+        color: var(--highlight-color);
+    }
+    .det {
+        display: inline;
+    }
 
 
 }
